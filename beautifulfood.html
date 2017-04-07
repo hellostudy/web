@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" /> 
+<script type="text/javascript" src="js/jquery1.4.js"></script>
+<script type="text/javascript" src="js/bioV4.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.mini.js"></script>
+<title>周边商家</title>
+<meta name="Keywords" content="周边商家"/>
+<meta name="Description" content="周边商家。"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link rel="stylesheet" type="text/css" href="style/basic.css"/>
+<link rel="stylesheet" type="text/css" href="style/tzjg_list.css"/>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="js/tzjg_list.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js?v=20130220"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('img,.ie6png');
+</script>
+<![endif]--> 
+
+</head>
+<body>
+	<script type="text/javascript" src="js/borsertocss.js"> </script><!-- 判断在IE9以下浏览器中根据像素的不同而设置的样式 -->	
+    
+   
+  <!--头部代码开始-->
+   
+    <div class="navbar navbar-fixed-top" style="_position: relative;_z-index: 10000;">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<div class="nav-collapse">
+					<ul class="nav" id="navID">
+						<li class=""><a href="index.html"><b>首页</b></a></li>
+					 	<li class=""><a href="cxzx_list.html"><b>校园资讯</b></a></li>
+						<li class=""><a href="cxfw_list.html"><b>学生服务</b></a></li>
+						<li class=""><a href="xmdata.html"><b>学生说说</b></a></li>
+						<li class="active"><a href="tzjg_list.html"><b>周边商家</b></a></li>
+						<li class=""><a href="xm_write.html"><b>个人中心</b></a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+				<ul class="nav pull-right login-none nav-tips">
+		<li class="ie6png divider-vertical" style="_width: 30px;_height: 40px;_background: url(images/icons.png) no-repeat 10px -106px;"><a class="dropdown-toggle clearfix" href="/login.html?url=aHR0cDovL3d3dy5iaW9kaXNjb3Zlci5jb20vbmV3cy5odG1sP3BhZ2U9Mg%3D%3D" style="padding: 7px 5px;"><img class="logo-before pull-left" src="images/avatar-icon.png" /></a></li>
+	</ul>
+<div class="popup-div tips-div" style="position: absolute;z-index: 10000001;display: none;"></div>
+<script type="text/javascript">
+var tip_show = 1;
+//头部下拉
+var timer1 = "";
+$('#dropdownID-0').hover(function(){
+	var obj = $(this);
+	if(timer1)
+	{
+		clearTimeout(timer1);
+	}
+	timer1 = setTimeout(function(){
+		obj.find('.dropdown-menu').show();
+		tip_show = 0;
+		$(".tips-div").hide();
+		obj.find('.other-icon').css({"background":"#2E2E2E"});
+	}, 500);
+},function(){
+	var obj = $(this);
+	if(timer1)
+	{
+		clearTimeout(timer1);
+	}
+	timer1 = setTimeout(function(){
+		obj.find('.dropdown-menu').hide();
+		$(".tips-div").hide();
+		tip_show = 1;
+		getTips();
+		obj.find('.other-icon').css({"background":"none"});
+	}, 500);
+});
+
+var timer2 = "";
+$('#dropdownID-1').hover(function(){
+	var obj = $(this);
+	if(timer2)
+	{
+		clearTimeout(timer2);
+	}
+	timer2 = setTimeout(function(){
+		obj.find('.dropdown-menu').show();
+		tip_show = 0;
+		$(".tips-div").hide();
+		obj.find('.other-icon').css({"background":"#2E2E2E"});
+	}, 500);
+},function(){
+	var obj = $(this);
+	if(timer2)
+	{
+		clearTimeout(timer2);
+	}
+	timer2 = setTimeout(function(){
+		obj.find('.dropdown-menu').hide();
+		tip_show = 1;
+		getTips();
+		$(".tips-div").hide();
+		obj.find('.other-icon').css({"background":"none"});
+	}, 500);
+});
+</script>				
+
+<ul class="nav pull-right pl-20 myul">
+    <li class=""><a href="register.html">注册</a></li>
+    <li class="l10"><a href="login.html">登录</a></li>
+</ul>
+			</div>
+		</div>
+	</div>
+	
+    <div class="top-div">
+	<div class="container clearfix">
+		
+       <div class="span3 logo-div logo-img" style="margin-left:0px;">
+        <a href="/" title="重庆人文科技学院"><img src="images/2a1.jpg" class="ie6png" style="display: block;"/></a>
+       </div>
+		
+        <div class="span11 pull-right top-ad" style="position: relative;_float: right;_height: 80px;_overflow: hidden;">
+ <a href="javascript:;" class="pull-left" target="_blank" rel="nofollow">
+        <img alt="" src="images/foodg.jpg" style="width: 100%; display: block;"/></a>
+        
+         <a href="javascript:;" class="pull-left" style="display:none;" target="_blank">
+        <img alt="" src="images/foodh.jpg" style="width: 100%; display: block;"/></a>
+
+	 <div class="slides-icon-ad slides-ad-point" style="position: absolute;right:60px;">
+				<a href="javascript:void(0);" class="icon-css-on ie6png">&nbsp;</a>
+				<a href="javascript:void(0);" class="icon-css ie6png">&nbsp;</a>	 
+			</div>
+            
+		</div>
+	</div>
+</div>
+    
+
+
+<script type="text/javascript">
+	$(function(){
+		var Interval_control = '';
+		var current_index = 0;
+		show_pic_ad = function(index){
+			$(".top-ad .pull-left").each(function(i){
+				$(this).hide();
+				if(i == index){
+					$(this).show(); 
+				}
+			});
+		};
+		show_point_ad = function(index){
+			$(".top-ad .slides-ad-point a").each(function(i){
+				if($(this).hasClass("icon-css-on")){
+					$(this).removeClass("icon-css-on");
+					$(this).addClass("icon-css");
+				}
+				if(i == index){
+					if($(this).hasClass("icon-css")){
+						$(this).removeClass("icon-css");
+					}
+					$(this).addClass("icon-css-on");
+				}
+			});
+		};
+		slides = function(){
+			$(".slides-ad-point a").each(function(index){
+				$(this).click(function(){
+					current_index = index;
+					show_point_ad(index);
+					show_pic_ad(current_index);
+				});
+			});
+		};
+		slides();
+		Interval_control = setInterval(function(){
+			show_point_ad(current_index);
+			show_pic_ad(current_index);
+			if (current_index == ($(".slides-icon-ad a").length - 1)){
+				current_index = -1;
+			}
+			current_index ++;
+		},5000);//设置自动切换函数
+		//当触发mouseenter事件时，取消正在执行的自动切换方法，触发mouseouter事件时重新设置自动切换
+		$(".top-ad .pull-left").mouseenter(function() {
+			clearInterval(Interval_control);//停止自动切换
+		}).mouseleave(function(){
+			Interval_control = setInterval(function(){
+				show_point_ad(current_index);
+				show_pic_ad(current_index);
+				if (current_index == ($(".top-ad .pull-left").length - 1)){
+					current_index = -1;
+				}
+				current_index ++;
+			},5000);//设置自动切换函数
+		});
+	});
+</script>
+
+<!--头部代码结束-->
+
+
+	<div class="hr tp-div-nexthr" style="margin-top: 0;margin-bottom: 0;padding: 0;"></div>
+	<div class="container pb-15">
+	<!-- Example row of columns -->
+	<div class="row">
+		<div class="span12">
+       
+       <!--搜索-->
+       
+       
+	   <div class="clearfix">
+       <div class="pull-left classifyDIV pt-10 my1D6597">周边商家 <span><a href="javascript:;">点击此查询商家</a>，可获得商家更多的信息,享受我们的服务</span></div>
+				
+         <div class="pull-right t-20 classifySearch" style="position: relative;">
+                  <form action="" method="get" style="margin:0px; padding:0px;">
+					<input id="search-input" type="text" class="search-input pull-left span4" value=""/>
+					<a href="javascript:void(0);" title="搜索" class="search-btn-css pull-left search-btn"></a>
+                  </form>
+				</div>
+		 </div>						
+   
+   <!--关注领域-->       
+  <div class="mylistshow b-20" id="mmlistshow">
+  <div class="downjiao"><img src="images/downjiao.jpg"  alt="hide" /></div>  
+  <dl class="mydllist">
+  <dd>你喜欢的：</dd>    
+  <dd class="selected"><span class="ml"></span><span class="mm"><a href="">全部</a></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">甜点饮品</a><i>13</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">火锅</a><i>12</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">日韩料理</a><i>15</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">西餐</a><i>16</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">小吃快餐</a><i>18</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">自助餐</a><i>13</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">咖啡酒吧茶馆</a><i>17</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">烧烤烤肉</a><i>10</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">东北菜</a><i>16</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">川湘菜</a><i>21</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">粤港菜</a><i>23</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">西北菜</a><i>18</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">京菜鲁菜</a><i>10</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">中式烧烤/烤串</a><i>10</i></span><span class="mr"></span></dd>
+  <dd><span class="ml"></span><span class="mm"><a href="">海鲜</a><i>13</i></span><span class="mr"></span></dd> 
+  </dl>
+       
+
+    </div>
+
+                    <div class="poi-tile-nodeal poi-tile-nodeal--even"  data-acm-clk="AcategoryC17902268764882406858.4087337.2" data-mtd-showlog="" data-mtd-clicklog="">
+            <a class="poi-tile__head J-mtad-link" href="beautifulfood.html" target="_blank">
+         <img class="lazyloadimg" alt="标题标题标题标题标题标题" src="images/beautifula.jpg" width="346" height="214" onload="M.logFirstScreenTime(this)" alt="天使之吻蛋糕（移通学院店）" />
+</a>
+
+<div class="poi-tile__info">
+    <div class="basic cf">
+        <i class="icon icon-shangjia"></i>
+        <a class="link f3 J-mtad-link" href="beautifulfood.html" target="_blank">天使之吻蛋糕（移通学院店）</a>
+        <span class="icons">
+            <a class="icon icon-tuan J-mtad-link" href="beautifulfood.html" target="_blank"></a>
+            <a class="icon icon-quan J-mtad-link" href="beautifulfood.html" target="_blank"></a>
+        </span>
+    </div>
+    <div class="extra">
+        <div class="tag-list">
+                <a target="_blank" href="beautifulfood.html" class="tag">美食</a>
+                <a target="_blank" href="" class="tag"></a>
+        </div>
+        <div class="rate">
+            <span class="common-rating">
+                <span class="rate-stars" style="width:100%"></span>
+            </span>
+            <a class="count J-mtad-link" href="beautifulfood.html" target="_blank"><span class="num">403</span>人评价</a> 		</div>
+    </div>
+</div>
+
+<div class="poi-tile__money">
+    <span class="avg">人均 <span class="price">¥12</span></span>
+
+    <a class="price f2 J-mtad-link" href="beautifulfood.html" target="_blank">
+        <span class="value"><span class="prefix">&yen;</span>8.5</span>起
+    </a>
+</div>
+
+    </div>
+
+    </div>
+
+                    <div class="poi-tile-nodeal poi-tile-nodeal--even"  data-acm-clk="AcategoryC17902268764882406858.4087337.2" data-mtd-showlog="" data-mtd-clicklog="">
+            <a class="poi-tile__head J-mtad-link" href="beautifulfood.html" target="_blank">
+         <img class="lazyloadimg" alt="标题标题标题标题标题标题" src="images/beautifula.jpg" width="346" height="214" onload="M.logFirstScreenTime(this)" alt="天使之吻蛋糕（移通学院店）" />
+</a>
+
+<div class="poi-tile__info">
+    <div class="basic cf">
+        <i class="icon icon-shangjia"></i>
+        <a class="link f3 J-mtad-link" href="http://hechuan.meituan.com/shop/4087337" target="_blank">天使之吻蛋糕（移通学院店）</a>
+        <span class="icons">
+            <a class="icon icon-tuan J-mtad-link" href="beautifulfood.html" target="_blank"></a>
+            <a class="icon icon-quan J-mtad-link" href="http://hechuan.meituan.com/shop/4087337#smh:anchor-salelist" target="_blank"></a>
+        </span>
+    </div>
+    <div class="extra">
+        <div class="tag-list">
+                <a target="_blank" href="beautifulfood.html">美食</a>
+                <a target="_blank" href="" class="tag"></a>
+        </div>
+        <div class="rate">
+            <span class="common-rating">
+                <span class="rate-stars" style="width:100%"></span>
+            </span>
+            <a class="count J-mtad-link" href="beautifulfood.html" target="_blank"><span class="num">403</span>人评价</a> 		</div>
+    </div>
+</div>
+
+<div class="poi-tile__money">
+    <span class="avg">人均 <span class="price">¥12</span></span>
+
+    <a class="price f2 J-mtad-link" href="beautifulfood.html" target="_blank">
+        <span class="value"><span class="prefix">&yen;</span>8.5</span>起
+    </a>
+</div>
+
+    </div>    </div>
+	
+
+
+ 
+
+
+<!-- /container -->
+
+  <div class="container">
+ 
+ 	<div class="hr"></div>
+    
+</div>
+  
+<!-- /container -->
+
+</div>
+    
+ 
+<div class="footer">
+		 
+		
+			<div class="clearfix" style="background:#EDEDED;">
+				
+                <!--<p class="fc999 pull-left footer-info">Copyright © 2013 生物探索网站<span class="l-20">苏ICP备11025281号</span></p>-->
+				
+                <ul class="about-ul">
+					<li>客服电话：023-42461119 计算机 <a href="http://www.crk.com/" target="_blank" title="计算机">重庆人文科技学院</a></li>
+					<li><span>|</span></li>
+					<li><a title="广告投放" href="javascript:;" class="fc666" target="_blank">广告投放</a></li>
+					<li><span>|</span></li>
+					<li><a title="校园服务" href="javascript:;" class="fc666" target="_blank">企业服务</a></li>
+					<li><span>|</span></li>
+					<li><a title="公司博客" href="javascript:;" class="fc666" target="_blank" >公司博客</a></li>
+					<li><span>|</span></li>
+					<li><a title="加入我们" href="javascript:;" class="fc666" target="_blank">加入我们</a></li>
+					<li><span>|</span></li>
+					<li><a title="服务协议" href="javascript:;" class="fc666" target="_blank">服务协议</a></li>
+					<li><span>|</span></li>
+                     <li id="zk_btn" class="ie6png down-class">
+                   	 <a title="友情链接" href="javascript:void(0);" class="fc666">友情链接</a>
+                    </li>
+				    <div class="clear"></div>
+				</ul>
+			</div>
+    
+    <div class="friend-link border-all t-20 b-20">
+		<ul class="clearfix">
+		
+	</ul>
+</div>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		var flag = 0;
+		$(".friend-link").hide();
+		//Down
+		$("#zk_btn").click(function(){
+			if(flag == 0){
+				$(".friend-link").slideDown(400); 
+				$(this).removeClass('down-class');
+				$(this).addClass('up-class');
+				$("html,body").animate({scrollTop:($(".friend-link").offset().top+2000)},600);
+				flag = 1;
+			}else{
+				$(".friend-link").slideUp(400);  
+				$(this).removeClass('up-class');
+				$(this).addClass('down-class'); 
+				flag = 0;
+			}
+		});
+	});
+</script>
+<p>Copyright ©2017　　备666666888888号</p>
+    
+		</div> 
+
+ 
+
+
+<script type="text/javascript">
+//回到顶部
+backToTop('body');
+</script>
+</body>
+</html>
